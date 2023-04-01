@@ -36,8 +36,8 @@ public class Main {
 //		System.out.println(Archivio.searchByDate(1998).size());
 //		System.out.println(Archivio.searchByAuthor("Alfredo"));
 //		System.out.println(Archivio.searchByTitle("one"));
-//		System.out.println(Archivio.elementsLoanedFromUser(1));
-		System.out.println(Archivio.expiredLoans());
+		System.out.println(Archivio.elementsLoanedFromUser(1828948060l).size());
+//		System.out.println(Archivio.expiredLoans());
 		
 		
 	}

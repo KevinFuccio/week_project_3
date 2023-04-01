@@ -72,8 +72,8 @@ public class Archivio {
 		q.setParameter("titolo",title);
 		return q.getResultList();
 	}
-	static public List<Catalogo> elementsLoanedFromUser(int id){
-		Query q = em.createQuery("SELECT el FROM Prestito el WHERE utente_id = :id ");
+	static public List<Catalogo> elementsLoanedFromUser(Long id){
+		Query q = em.createQuery("SELECT el FROM Prestito el WHERE el.utente.numero_tessera = :id and el.restituzione_effettiva =null");
 		q.setParameter("id",id);
 		return q.getResultList();
 	}
